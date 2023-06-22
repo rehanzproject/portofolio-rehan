@@ -1,7 +1,6 @@
 import {  MyListComponent, list } from "./constant";
 
 function Navbar() {
-  console.log(list);
   
   return (
     <div className="fixed flex items-center justify-center inset-x-0 bottom-0 my-6 h-24">
