@@ -11,7 +11,7 @@ function FullView() {
           About Me
         </div>
        <Navbar />
-       <AboutMe arg={testString} />
+       <AboutMe arg={testString as string} />
       </div>
     </div>
   );

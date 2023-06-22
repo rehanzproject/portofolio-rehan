@@ -1,5 +1,5 @@
-function AboutMe<T>({ arg }: { arg: T }): JSX.Element {
-  return <div>Halo gaiseee</div>;
+function AboutMe({ arg }: { arg: string }): JSX.Element {
+  return <div>{arg}</div>;
 }
 
 export default AboutMe;
