@@ -1,4 +1,4 @@
-import GithubIcon from "../../atoms/Icons/GithubIcon";
+import GithubIcon from "../../atoms/Icons/GithubIcon.icon";
 import HomeIcon from "../../atoms/Icons/HomeIcon.icon";
 
 export interface ListComponent {
