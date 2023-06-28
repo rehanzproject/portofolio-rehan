@@ -1,10 +1,9 @@
 import { useState } from "react";
-import Sidebar from "../moleculs/Sidebar/Sidebar.molecul";
 import PencilIcon from "../atoms/Icons/PencilIcon.icon";
 import CompletedIcon from "../atoms/Icons/CompletedIcon.icon";
 import TrashIcon from "../atoms/Icons/TrashIcon.icon";
 
-function FullView() {
+function TodoList() {
   type TodoProps = {
     id: number;
     name: string;
@@ -60,45 +59,43 @@ function FullView() {
     setTodo(updatedTodo);
   };
   return (
-    <div className="border bg-gradient-to-br from-black to-blue-500 text-white h-screen">
-      <div className="flex items-start">
-        <Sidebar />
-        <div className="flex flex-col p-10">
-          To Do List
-          <input
-            type="text"
-            value={text}
-            onChange={handleChange}
-            className="text-black"
-            placeholder="Input here..."
-          />
-          <button
-            className="py-2 border"
-            onClick={isEdit ? handleEditSubmit : handleSubmit}
-          >
-            {isEdit ? "Edit" : "Submit"}
-          </button>
-        </div>
-        <div>
-          {todo.map((value) => (
-            <div
-              key={value.id}
-              className="flex justify-between gap-4 my-4 p-5 border cursor-pointer"
-            >
-              <h1 className={`${value.isCompleted ? "line-through" : ""}`}>
-                {value.name}
-              </h1>{" "}
-              <PencilIcon onClick={() => handleEdit(value)} width={24} />
-              <CompletedIcon onClick={() => completedTodo(value)} />
-              <TrashIcon onClick={() => deleteTodo(value)} />
-            </div>
-          ))}
-        </div>
+    <div className="max-w-sm">
+      <div className="flex flex-col p-10">
+        To Do List
+        <input
+          type="text"
+          value={text}
+          onChange={handleChange}
+          className="text-black"
+          placeholder="Input here..."
+        />
+        <button
+          className="py-2 border"
+          onClick={isEdit ? handleEditSubmit : handleSubmit}
+        >
+          {isEdit ? "Edit" : "Submit"}
+        </button>
+      </div>
+      <div>
+     
+     
 
-        {/* <AboutMe {...arg} /> */}
+        {todo.map((value) => (
+          <div
+            key={value.id}
+            className="flex justify-between gap-4 my-4 p-5 border cursor-pointer"
+          >
+            <h1 className={`${value.isCompleted ? "line-through" : ""}`}>
+              {value.name}
+            </h1>{" "}
+            <PencilIcon onClick={() => handleEdit(value)} width={24} />
+            <CompletedIcon onClick={() => completedTodo(value)} />
+            <TrashIcon onClick={() => deleteTodo(value)} />
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
-export default FullView;
+export default TodoList;

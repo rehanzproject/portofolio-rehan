@@ -1,7 +1,11 @@
-import FullView from "./components/pages/App.views";
+import RootRouter from "./config/router";
 
 function App() {
-  return <FullView />;
+  return (
+    <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-blue-100">
+      <RootRouter />
+    </div>
+  );
 }
 
 export default App;
