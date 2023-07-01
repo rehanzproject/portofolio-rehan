@@ -8,24 +8,19 @@ export const listAbout: IAbout[] = [
     path: "/",
   },
   {
-    name: "Skills",
-    path: "/skills",
-  },
-  {
     name: "Project",
     path: "/project",
   },
   {
-    name: "Experience",
-    path: "/experience",
-  },
-  
-  {
-    name: "Certificate",
-    path: "/certificate",
+    name: "Education",
+    path: "/education",
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: "Skills",
+    path: "/skills",
   },
+  // {
+  //   name: "Contact",
+  //   path: "/contact",
+  // },
 ];

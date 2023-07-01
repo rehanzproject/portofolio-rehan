@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <div className="text-base md:text-sm">
       <p>
         Hello! Thank you for visiting my profile. My name is{" "}
         <span className="font-bold">Rehan Maulana</span> , and I am a junior

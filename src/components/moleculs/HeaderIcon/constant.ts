@@ -1,4 +1,4 @@
-import { GithubIcon, LinkedinIcon } from "../../atoms";
+import { GithubIcon, LinkedinIcon, WhatsappIcon } from "../../atoms";
 type IconProps = {
   name: string;
   icon: React.ComponentType;
@@ -15,5 +15,10 @@ export const icon: IconProps[] = [
     name: "Github",
     icon: GithubIcon,
     href: "https://github.com/rehanzproject",
+  },
+  {
+    name: "Whatsapp",
+    icon: WhatsappIcon,
+    href: "https://api.whatsapp.com/send?phone=6283895104256",
   },
 ];

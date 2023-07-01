@@ -13,16 +13,16 @@ function TodoList() {
   const [text, setText] = useState<string>("");
   const [todo, setTodo] = useState<TodoProps[]>([]);
   const [isEdit, setEdit] = useState<boolean>(false);
-  const [idxSelected, setidxSelected] = useState<number>(0);
+  const [idxSelected, setIdxSelected] = useState<number>(0);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setText(event.target.value);
   };
 
-  const handleEdit = (value: TodoProps) => {
+  const handleEdit = ({ name, id }: TodoProps) => {
     setEdit(true);
-    setText(value.name);
-    setidxSelected(value.id);
+    setText(name);
+    setIdxSelected(id);
   };
   const handleEditSubmit = () => {
     const updatedTodo = todo.map((item) =>
@@ -47,7 +47,6 @@ function TodoList() {
   };
 
   const deleteTodo = (value: TodoProps) => {
-    setidxSelected(value.id);
     const newTodo = [...todo];
     const deleteData = newTodo.filter((item) => item !== value);
     setTodo(deleteData);
@@ -77,9 +76,7 @@ function TodoList() {
         </button>
       </div>
       <div>
-     
-     
-
+        
         {todo.map((value) => (
           <div
             key={value.id}
