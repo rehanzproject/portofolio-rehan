@@ -6,7 +6,7 @@ function CardSkill() {
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
      
       {mySkill.map((list) => (
-        <ul key={list} className="">
+        <ul key={list}>
           <li className="flex gap-2">
             <CheckMark /> {list}
           </li>
