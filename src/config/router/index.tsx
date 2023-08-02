@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   AboutMeView,
-  ContactView,
   EducationView,
   ProjectView,
   SkillsView,
@@ -18,7 +17,6 @@ function RootRouter() {
           <Route path="/skills" element={<SkillsView />} />
           <Route path="/education" element={<EducationView />} />
           <Route path="/project" element={<ProjectView />} />
-          <Route path="/contact" element={<ContactView />} />
         </Route>
         <Route path="/todo" element={<TodoListView />} />
       </Routes>
