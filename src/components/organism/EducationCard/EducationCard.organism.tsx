@@ -1,4 +1,3 @@
-import SlidingInterval from "../../atoms/Carousel/Carousel.atoms";
 import { educationCard } from "./constant";
 
 function EducationCard() {

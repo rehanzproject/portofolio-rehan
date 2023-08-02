@@ -1,7 +1,8 @@
-import { IEducationCard } from "../type";
 import sertMSIB from "../../../assets/MSIB.pdf";
 import MTCNA from "../../../assets/MTCNA.pdf";
-
+interface IEducationCard {
+  [index:string ] : string
+}
 export const educationCard: IEducationCard[] = [
   {
     name: "Alterra Academy",
