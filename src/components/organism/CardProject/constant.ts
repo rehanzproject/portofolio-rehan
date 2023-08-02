@@ -1,5 +1,5 @@
-import tokopaedi from "../../../assets/Tokopaedi.pdf";
-import lms from "../../../assets/LMS.pdf";
+import tokopaedi from "../../../assets/Tokopaedi-project.pdf";
+import lms from "../../../assets/LMS-project.pdf";
 
 export interface ICardProject {
   name: string;
@@ -12,14 +12,7 @@ export const listCard: ICardProject[] = [
   {
     name: "Tokopaedi",
     desc: "A mini e-commerce website for shoes, also known as a small-scale or simplified e-commerce website, is a platform that allows businesses or individuals to sell products or services online on a smaller scale.",
-    techStack: [
-      "React JS ",
-      "TailwindCSS",
-      "GraphQL",
-      "Redux",
-      "Firebase",
-      "Apollo",
-    ],
+    techStack: ["React JS ", "TailwindCSS", "GraphQL", "Redux", "Firebase"],
     pdf: tokopaedi,
   },
   {

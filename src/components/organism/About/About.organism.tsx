@@ -9,13 +9,6 @@ function About() {
         am enthusiastic about turning design concepts into functional and
         visually appealing websites.
       </p>
-      <p className="py-2">
-        During my journey as a front-end engineer, I have gained hands-on
-        experience in building responsive layouts, implementing interactive
-        features, and optimizing website performance. I enjoy collaborating with
-        designers and back-end developers to bring projects to life and ensure
-        seamless integration of front-end components.
-      </p>
     </div>
   );
 }
