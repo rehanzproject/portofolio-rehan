@@ -7,10 +7,10 @@ function CardProject({ desc, name, pdf, techStack }: ICardProject) {
   return (
     <div
       key={name}
-      className="rounded-md group/item md:px-4 hover:bg-zinc-500/10"
+      className="rounded-md group/item p-4 hover:bg-zinc-500/10"
     >
       
-      <p className="font-bold text-lg py-1 group-hover/item:text-emerald-400 text-white">
+      <p className="font-bold text-lg py-1  group-hover/item:text-emerald-400 text-white">
         {name}
       </p>
     

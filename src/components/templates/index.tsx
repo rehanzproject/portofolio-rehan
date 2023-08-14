@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
 import AboutMe from "../organism/AboutMe/AboutMe.organism";
+import Navbar from "../organism/Navbar/Navbar.organism";
 
 function TemplateIndex() {
   return (
-    <div className="flex flex-col md:justify-center md:flex-row lg:h-screen">
-      <AboutMe />
-      <div className="flex w-full md:w-[50%] lg:py-24 md:py-2 px-16">
+    <>
+    <Navbar />
+      <div className="flex flex-col px-4 md:px-16 ">
+        <AboutMe />
         <Outlet />
       </div>
-    </div>
+    </>
   );
 }
 

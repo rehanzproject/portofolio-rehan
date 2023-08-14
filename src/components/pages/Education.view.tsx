@@ -1,13 +1,13 @@
 import EducationCard from "../organism/EducationCard/EducationCard.organism"
 
-function Education() {
+function EducationView() {
   return (
-    <div>
-        <h1 className="text-2xl text-white md:px-10">Education</h1>
+    <section id="education">
+        <h1 className="text-2xl text-white">Education</h1>
         <EducationCard />
-    </div>
+    </section>
 
   )
 }
 
-export default Education
+export default EducationView
