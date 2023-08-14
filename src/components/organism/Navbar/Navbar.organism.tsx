@@ -86,9 +86,6 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <button className="text-white border-white border-2 px-2 w-full">
-                Book Now!
-              </button>
             </div>
           </Disclosure.Panel>
         </>
