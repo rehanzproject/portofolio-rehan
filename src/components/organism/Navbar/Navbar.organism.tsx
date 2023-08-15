@@ -13,7 +13,7 @@ type Open = {
 const navigation: Nav[] = [
   { name: "Resume", href: "#resume", current: true },
   { name: "Project", href: "#project", current: false },
-  { name: "Educaction", href: "#education", current: false },
+  { name: "Education", href: "#education", current: false },
   { name: "Skill", href: "#skill", current: false },
 ];
 
@@ -45,7 +45,7 @@ export default function Navbar() {
               </div>
 
               <div className="flex flex-1 items-center justify-end sm:items-stretch">
-                <a href={myCV} download={myCV} className="text-white border-white p-2 border-2 mr-12 md:mr-0">
+                <a href={myCV} download={myCV} className="text-white border-white p-2 border-2 mr-12 sm:mr-0">
                   Download CV
                 </a>{" "}
                 <div className="hidden sm:ml-6 sm:block">
@@ -77,8 +77,8 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      ? "bg-black/10 text-emerald-500"
+                      : "text-white hover:bg-black/10 hover:text-emerald-500",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
