@@ -45,7 +45,7 @@ export default function Navbar() {
               </div>
 
               <div className="flex flex-1 items-center justify-end sm:items-stretch">
-                <a href={myCV} download={myCV} className="text-white border-white p-2 border-2 mr-12 md:mr-0 lg:mr-0">
+                <a href={myCV} download={myCV} className="text-white border-white p-2 border-2 mr-12 md:mr-0">
                   Download CV
                 </a>{" "}
                 <div className="hidden sm:ml-6 sm:block">
