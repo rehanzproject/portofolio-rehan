@@ -23,7 +23,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-black/50 sticky top-0 inset-x-0">
+    <Disclosure as="nav" className="bg-black/20 sticky top-0 inset-x-0">
       {({ open }: Open) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
