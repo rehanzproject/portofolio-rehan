@@ -6,15 +6,18 @@ export const educationCard: IEducationCard[] = [
     name: "Alterra Academy",
     duration: "2023 Feb - 2023 June",
     degree: "Bootcamp Front-End MSIB",
+    grade: '92 out of 100'
   },
   {
-    name: "Institut Teknologi dan Bisnis ASIA Malang",
+    name: "Institute Technology and Bussiness ASIA Malang",
     duration: "2020 June - Present",
-    degree: "S1 - Informatics Engineering",
+    degree: "Bachelor of Informatics Engineering",
+    grade: '3.57 out of 4.0'
   },
   {
     name: "SMKN 8 Malang",
-    duration: "2017 June - 2020",
+    duration: "2017 June - 2020 March",
     degree: "Electronic Industry",
+    grade: '89 out of 100'
   },
 ];

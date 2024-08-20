@@ -1,3 +1,4 @@
+import { useState, useEffect, useCallback } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import myCV from "../../../assets/CV-Rehan.pdf";
@@ -22,8 +23,39 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = useCallback(() => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // If scrolling down
+        setIsVisible(false);
+      } else {
+        // If scrolling up
+        setIsVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  }, [lastScrollY]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY, controlNavbar]);
+
   return (
-    <Disclosure as="nav" className="bg-black/20 sticky top-0 inset-x-0">
+    <Disclosure
+      as="nav"
+      className={`bg-black/60 z-auto sticky top-0 inset-x-0 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       {({ open }: Open) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -45,9 +77,13 @@ export default function Navbar() {
               </div>
 
               <div className="flex flex-1 items-center justify-end sm:items-stretch">
-                <a href={myCV} download={myCV} className="text-white border-white p-2 border-2 mr-12 sm:mr-0">
+                <a
+                  href={myCV}
+                  download={myCV}
+                  className="text-white border-white p-2 border-2 mr-12 sm:mr-0"
+                >
                   Download CV
-                </a>{" "}
+                </a>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
