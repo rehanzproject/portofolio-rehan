@@ -27,6 +27,7 @@ function Navbar() {
               </div>
             </button>
           ))}
+        
         </div>
       </div>
     </div>

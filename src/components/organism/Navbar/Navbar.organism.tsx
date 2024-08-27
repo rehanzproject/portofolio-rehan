@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import myCV from "../../../assets/CV-Rehan.pdf";
 
 type Nav = {
   name: string;
@@ -77,13 +76,7 @@ export default function Navbar() {
               </div>
 
               <div className="flex flex-1 items-center justify-end sm:items-stretch">
-                <a
-                  href={myCV}
-                  download={myCV}
-                  className="text-white border-white p-2 border-2 mr-12 sm:mr-0"
-                >
-                  Download CV
-                </a>
+               
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
