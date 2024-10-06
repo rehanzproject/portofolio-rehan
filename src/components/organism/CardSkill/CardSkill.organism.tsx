@@ -6,7 +6,7 @@ function CardSkill() {
      
       {mySkill.map((list) => (
         <div key={list.name} className="flex flex-col text-center justify-center items-center overflow-hidden">
-          <img src={list.icon} alt="" className="w-full sm:w-[200px]" />
+          <img src={list.icon} alt="" className="w-full sm:w-[200px]" width={200} height={200} />
           <p>{list.name}</p>
         </div>
       ))}

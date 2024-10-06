@@ -5,7 +5,7 @@ function HeaderIcon() {
     window.open(href, "_blank");
   };
   return icon.map((list) => (
-    <button className={`opacity-50 hover:opacity-100`} key={list.name} onClick={() => handleClick(list.href)}>
+    <button aria-label={list.name} className={`opacity-50 hover:opacity-100`} key={list.name} onClick={() => handleClick(list.href)}>
       {" "}
       <list.icon />
     </button>

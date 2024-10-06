@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://portfoliorehan.my.id/sitemap.xml
+

@@ -1,15 +1,15 @@
 import { useSpring, animated } from "react-spring";
 import { HeaderIcon } from "../../moleculs";
-import image from "../../../assets/mypicture.png";
-import myCV from "../../../assets/CV-Rehan.pdf";
+import image from "/images/mypicture.png";
+import myCV from "/document/CV-Rehan.pdf";
 
-function AboutMe(): JSX.Element {
+function AboutMe(){
   const fade = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 500 });
   const fadeIn = useSpring({
     opacity: 1,
     transform: "translateY(0)",
     from: { opacity: 0, transform: "translateY(20px)" },
-    delay: 200, // Adjust delay as needed
+    delay: 200, 
   });
   return (
     <section id="resume" className="pt-[50px] py-6 flex flex-col md:flex-row">
@@ -27,7 +27,7 @@ function AboutMe(): JSX.Element {
           style={fadeIn}
           className="text-white text-base pt-4 md:text-sm w-full md:w-3/4"
         >
-          <p className="py-4">
+          <p className="my-6">
             Hello! Thank you for visiting my profile. My name is{" "}
             <span className="font-bold">Rehan Maulana</span>, and I am a junior
             fullstack engineer passionate about creating captivating and
@@ -37,8 +37,8 @@ function AboutMe(): JSX.Element {
           </p>
           <a
             href={myCV}
-            download={myCV}
-            className="text- border-emerald-400 shadow-emerald-400 shadow-lg p-3 rounded-full border-2 my-4"
+            target="_blank"
+            className="border-emerald-400 shadow-emerald-400 shadow-lg p-3 rounded-full border-2 mt-6"
           >
             Download CV
           </a>

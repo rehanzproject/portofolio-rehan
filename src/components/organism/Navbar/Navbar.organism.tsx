@@ -28,10 +28,8 @@ export default function Navbar() {
   const controlNavbar = useCallback(() => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        // If scrolling down
         setIsVisible(false);
       } else {
-        // If scrolling up
         setIsVisible(true);
       }
       setLastScrollY(window.scrollY);
