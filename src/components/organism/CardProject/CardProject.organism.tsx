@@ -25,13 +25,13 @@ function CardProject({ desc, name, pdf, techStack }: ICardProject) {
           </div>
         ))}
       </div>
-      <button
+      {/* <button
         type="button"
         onClick={() => handleOpenPDF(pdf)}
         className="p-1 py-2 text-blue-500"
       >
         See Detail
-      </button>
+      </button> */}
     </div>
   );
 }
