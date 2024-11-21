@@ -1,4 +1,5 @@
 import { EducationView, ProjectView, SkillsView } from ".";
+import ContactCard from "../organism/ContactCard/ContactCard.organism";
 
 function AboutMeView(){
   return (
@@ -6,6 +7,7 @@ function AboutMeView(){
       <ProjectView />
       <EducationView />
       <SkillsView />
+      {/* <ContactCard /> */}
     </div>
   )
 }

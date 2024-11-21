@@ -12,7 +12,7 @@ export const educationCard: IEducationCard[] = [
     name: "Institute Technology and Bussiness ASIA Malang",
     duration: "2020 June - Present",
     degree: "Bachelor of Informatics Engineering",
-    grade: '3.57 out of 4.0'
+    grade: '3.69 out of 4.0'
   },
   {
     name: "SMKN 8 Malang",

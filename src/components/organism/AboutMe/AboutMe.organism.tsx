@@ -38,7 +38,7 @@ function AboutMe(){
           <a
             href={myCV}
             target="_blank"
-            className="border-emerald-400 shadow-emerald-400 shadow-lg p-3 rounded-full border-2 mt-6"
+            className="border-emerald-400 shadow-emerald-400 shadow-lg p-3 rounded-full border-2"
           >
             Download CV
           </a>
