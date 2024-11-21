@@ -1,88 +1,75 @@
-import HTML from "/images/skill/HTML.webp";
-import CSS from "/images/skill/CSS.webp";
-import Js from "/images/skill/js.webp";
-import ts from "/images/skill/ts.webp";
-import React from "/images/skill/react.webp";
-import redux from "/images/skill/redux.webp";
-import nodejs from "/images/skill/nodejs.webp";
-import expressjs from "/images/skill/expressjs.webp";
-import tailwind from "/images/skill/tailwind.webp";
-import boostrap from "/images/skill/bs.webp";
-import restapi from "/images/skill/rest.webp";
-import graphql from "/images/skill/graphql.webp";
-import vue from "/images/skill/vue.webp";
-import php from "/images/skill/php.webp";
-import sequelize from "/images/skill/sequelize.webp";
-
-type MySkill = {
-  name: string;
-  icon: string;
-};
-
-export const mySkill: MySkill[] = [
+export const mySkill = [
   {
     name: "HTML",
-    icon: HTML,
+    icon: "/images/skill/HTML.webp",
   },
   {
     name: "CSS",
-    icon: CSS,
+    icon: "/images/skill/CSS.webp",
   },
   {
     name: "Javascript",
-    icon: Js,
+    icon: '/images/skill/js.webp',
   },
   {
     name: "Typescript",
-    icon: ts,
+    icon: "/images/skill/ts.webp"
   },
   {
     name: "PHP",
-    icon: php,
+    icon: "/images/skill/php.webp",
   },
   {
     name: "React JS",
-    icon: React,
+    icon: "/images/skill/react.webp",
   },
   {
     name: "React Native",
-    icon: React,
+    icon: "/images/skill/react.webp",
   },
   {
     name: "Vue Js",
-    icon: vue,
+    icon: "/images/skill/vue.webp",
   },
   {
     name: "Node Js",
-    icon: nodejs,
+    icon: "/images/skill/nodejs.webp",
   },
   {
     name: "Express Js",
-    icon: expressjs,
+    icon: "/images/skill/expressjs.webp",
   },
   {
     name: "Redux",
-    icon: redux,
+    icon: "/images/skill/redux.webp",
   },
   {
     name: "TailwindCSS",
-    icon: tailwind,
+    icon: "/images/skill/tailwind.webp",
   },
   {
     name: "Boostrap",
-    icon: boostrap,
+    icon: "/images/skill/bs.webp",
   },
   {
     name: "REST API",
-    icon: restapi,
+    icon: "/images/skill/restapi.webp",
   },
   {
     name: "GraphQL",
-    icon: graphql,
+    icon: "/images/skill/graphql.webp",
   },
-  
+
   {
     name: "Sequelize",
-    icon: sequelize,
+    icon: "/images/skill/sequelize.webp",
+  },
+  {
+    name: "Docker",
+    icon: "/images/skill/docker.png",
+  },
+{
+    name: "Nginx",
+    icon: "/images/skill/nginx.png",
   },
 ];

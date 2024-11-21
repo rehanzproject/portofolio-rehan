@@ -5,14 +5,14 @@ function CardSkill() {
       {mySkill.map((list) => (
         <div
           key={list.name}
-          className="flex flex-col text-center justify-center items-center"
+          className="flex flex-row gap-2 p-2 text-center justify-start items-center rounded-md hover:bg-zinc-500/10"
         >
           <img
             src={list.icon}
             alt={list.name}
-            className="w-[150px] h-[150px] object-contain"
+            className="w-[40px] h-[40px] object-contain"
           />
-          <p className="mt-4 text-lg font-medium">{list.name}</p>
+          <p className="mt-4 md:text-lg font-medium">{list.name}</p>
         </div>
       ))}
     </div>

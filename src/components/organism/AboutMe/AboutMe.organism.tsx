@@ -1,6 +1,6 @@
 import { useSpring, animated } from "react-spring";
 import { HeaderIcon } from "../../moleculs";
-import image from "/images/mypicture.png";
+import image from "/images/mypicture.webp";
 import myCV from "/document/CV-Rehan.pdf";
 
 function AboutMe(){
