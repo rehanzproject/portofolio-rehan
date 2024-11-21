@@ -5,7 +5,6 @@ function AboutMeView(){
       <ProjectView />
       <EducationView />
       <SkillsView />
-      {/* <ContactCard /> */}
     </div>
   )
 }
