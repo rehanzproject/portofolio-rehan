@@ -2,18 +2,19 @@ import { useSpring, animated } from "react-spring";
 import { HeaderIcon } from "../../moleculs";
 import image from "/images/mypicture.webp";
 import myCV from "/document/CV-Rehan.pdf";
+import { FaDownload, FaWhatsapp } from "react-icons/fa"; // Importing icons
 
-function AboutMe(){
+function AboutMe() {
   const fade = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 500 });
   const fadeIn = useSpring({
     opacity: 1,
     transform: "translateY(0)",
     from: { opacity: 0, transform: "translateY(20px)" },
-    delay: 200, 
+    delay: 200,
   });
   return (
     <section id="resume" className="pt-[50px] py-6 flex flex-col md:flex-row">
-      <div className="text-white  w-full md:w-">
+      <div className="text-white w-full md:w-1/2">
         <animated.h1 style={fade} className="text-4xl font-extrabold">
           Rehan Maulana
         </animated.h1>
@@ -35,13 +36,26 @@ function AboutMe(){
             I am enthusiastic about turning design concepts into functional and
             visually appealing websites.
           </p>
-          <a
-            href={myCV}
-            target="_blank"
-            className="border-emerald-400 shadow-emerald-400 shadow-lg p-3 rounded-full border-2"
-          >
-            Download CV
-          </a>
+          <div className="flex gap-4 mt-4">
+            <a
+              href={myCV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-emerald-400 shadow-emerald-400 shadow-lg p-3 rounded-full border-2 flex items-center gap-2"
+            >
+              <FaDownload /> {/* Download Icon */}
+              Download CV
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=6283895104256"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-emerald-400 shadow-emerald-400 shadow-lg p-3 rounded-full border-2 flex items-center gap-2"
+            >
+              <FaWhatsapp /> {/* WhatsApp Icon */}
+              Hire Me
+            </a>
+          </div>
         </animated.div>
       </div>
       <div className="flex justify-center items-center w-full md:w-1/2">

@@ -1,7 +1,14 @@
 import { ICardProject } from "./constant";
+import { FaGithub } from "react-icons/fa"; // Import GitHub icon from React Icons
 
-function CardProject({ desc, name, image, techStack }: ICardProject) {
-
+function CardProject({
+  desc,
+  name,
+  image,
+  techStack,
+  githubLink,
+  liveDemo,
+}: ICardProject) {
   return (
     <div
       key={name}
@@ -28,9 +35,35 @@ function CardProject({ desc, name, image, techStack }: ICardProject) {
           </div>
         ))}
       </div>
-
+      <div className="flex justify-start items-center gap-4 mt-4">
+        <a
+          href={liveDemo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center hover:text-emerald-400 text-white"
+        >
+          {liveDemo && (
+            <>
+              <span className="mr-2">🌐</span>
+              <span>Live Demo</span>
+            </>
+          )}
+        </a>
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center hover:text-emerald-400 text-white"
+        >
+          {githubLink && (
+            <>
+              <FaGithub className="mr-2" />
+              <span>View on GitHub</span>
+            </>
+          )}
+        </a>
+      </div>
     </div>
-    
   );
 }
 

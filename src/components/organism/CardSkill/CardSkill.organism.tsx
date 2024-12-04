@@ -1,7 +1,7 @@
 import { mySkill } from "./constant";
 function CardSkill() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pb-20">
       {mySkill.map((list) => (
         <div
           key={list.name}

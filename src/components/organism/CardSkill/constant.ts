@@ -64,12 +64,4 @@ export const mySkill = [
     name: "Sequelize",
     icon: "/images/skill/sequelize.webp",
   },
-  {
-    name: "Docker",
-    icon: "/images/skill/docker.png",
-  },
-{
-    name: "Nginx",
-    icon: "/images/skill/nginx.png",
-  },
 ];

@@ -12,10 +12,10 @@ function EducationCard() {
             <div className="flex justify-between md:justify-normal">
             <h1 className="border-l px-4 text-lg text-white font-bold md:text-xl">
               {list.name}</h1>
-              <span className="text-slate-400 text-sm pt-1">{list.duration}</span>{" "}
+              <span className="text-slate-300 text-sm pt-1">{list.duration}</span>{" "}
             </div>
-              <p className="italic text-base text-gray-500">{list.degree}</p>
-              <p className="text-sm text-gray-500"><span className="text-white font-bold">Grade :</span>  {list.grade}</p>
+              <p className="italic text-base text-gray-300">{list.degree}</p>
+              <p className="text-sm text-gray-200"><span className="text-white font-bold">Grade :</span>  {list.grade}</p>
           </div>
         ))}
       </div>
