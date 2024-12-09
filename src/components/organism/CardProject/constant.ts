@@ -8,6 +8,15 @@ export interface ICardProject {
 }
 
 export const listCard: ICardProject[] = [
+
+  {
+    name: "Badan Kepegawaian Daerah",
+    desc: "A web application designed for managing user data, including creating, editing, and deleting records, as well as generating data reports in PDF format. Built to streamline administrative processes, it ensures efficiency and ease of use for managing retirement data and other key information.",
+    techStack: ["Laravel Breeze", "Vue JS", "MySQL"],
+    image: '/images/projects/bkd.webp',
+    githubLink: '',
+    liveDemo: 'https://bkd.hanzstore.my.id/',
+  },
   {
     name: "Online Shop Tokopaedi",
     desc: "A mini e-commerce website for shoes that provides a platform for users to browse, select, and purchase footwear online.",
@@ -57,16 +66,16 @@ export const listCard: ICardProject[] = [
     liveDemo: 'https://anonytalk.my.id/',
   },
   {
-    name: "Ruang Maju Digital",
-    desc: "A web application that connects users through a community platform, allowing them to share jokes and engage with others using Vue.js and TailwindCSS.",
-    techStack: ["Vue JS", "TailwindCSS"],
+     name: "Ruang Maju Digital",
+     desc: "Ruang Maju Digital is a digital platform offering professional website development services. We help you create visually appealing, responsive, and business-tailored websites using modern technologies like Vue.js and TailwindCSS. Elevate your online presence and leave a lasting impression with a website designed just for you.",
+     techStack: ["Vue JS", "TailwindCSS"],
     image: '/images/projects/ruangmaju.webp',
     githubLink: '',
     liveDemo: 'https://ruangmajudigital.com/',
   },
   {
     name: "ByTheWay",
-    desc: "A web application that connects users through a community platform, allowing them to share jokes and engage with others using Vue.js and TailwindCSS.",
+    desc: "This project aims to develop a web application that connects users through a community platform. It allows users to share jokes, engage with others, and foster an interactive community..",
     techStack: ["Vue JS", "TailwindCSS"],
     image: '/images/projects/bythewayy.webp',
     githubLink: '',
