@@ -1,6 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import {
   AcademicCapIcon,
+  BriefcaseIcon,
   CpuChipIcon,
   DocumentTextIcon,
   HomeIcon,
@@ -18,6 +19,12 @@ const navigation: Nav[] = [
     href: "#resume",
     current: true,
     icon: <DocumentTextIcon className="h-6 w-6" />,
+  },
+  {
+    name: "Experience",
+    href: "#work-experience",
+    current: false,
+    icon: <BriefcaseIcon className="h-6 w-6" />,
   },
   {
     name: "Project",
@@ -45,7 +52,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-black/80 rounded-full max-w-md flex mx-auto z-50 fixed bottom-0 my-2 inset-x-0"
+      className="bg-black/80 rounded-full max-w-lg flex mx-auto z-50 fixed bottom-0 my-2 inset-x-0"
     >
       {() => (
         <>

@@ -1,7 +1,7 @@
 import { useSpring, animated } from "react-spring";
 import { HeaderIcon } from "../../moleculs";
 import image from "/images/mypicture.webp";
-import myCV from "/document/CV-Rehan.pdf";
+import myCV from "/document/CV_Rehan_Maulana.pdf";
 import { FaDownload, FaWhatsapp } from "react-icons/fa"; // Importing icons
 
 function AboutMe() {
