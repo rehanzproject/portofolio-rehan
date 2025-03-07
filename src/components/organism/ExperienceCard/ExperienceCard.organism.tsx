@@ -1,6 +1,18 @@
 
 const workExperience = [
   {
+    title: "Website Quality Control",
+    company: "CV. Indosoft",
+    duration: "February 2024 – Present",
+    responsibilities: [
+      "Conducted thorough testing of web applications to identify bugs, usability issues, and performance bottlenecks, ensuring a 99% defect-free release rate.",
+      "Implemented automated testing scripts using tools like Selenium and Cypress, reducing manual testing time by 40%.",
+      "Collaborated with development teams to prioritize and resolve critical issues, improving overall product quality and user satisfaction.",
+      "Performed cross-browser and cross-device compatibility testing, ensuring seamless user experiences across all platforms.",
+      "Documented and reported detailed test cases and results, providing actionable insights for continuous improvement."
+    ]
+  },
+  {
     title: "Freelance Web Developer",
     company: "Projects co id",
     duration: "February 2024 – October 2024",
